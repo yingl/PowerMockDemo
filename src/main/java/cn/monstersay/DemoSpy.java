@@ -60,6 +60,7 @@ public class DemoSpy {
     public void step001() {}
     public void step002() {}
     public void step003() {}
+    public void step005() {}
 
     // Ë½ÓÐ·½·¨
     static private String getBossNameInternal() {

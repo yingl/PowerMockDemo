@@ -236,6 +236,7 @@ public class DemoSpyTest {
         inOrder.verify(demoSpy, Mockito.times(2)).step003();
         inOrder.verify(demoSpy, Mockito.times(1)).step002();
         inOrder.verify(demoSpy, Mockito.times(1)).step003();
+        inOrder.verify(demoSpy, Mockito.never()).step005();
         try {
             PowerMockito.verifyPrivate(demoSpy, Mockito.times(1)).invoke("step004Internal");
         } catch (Exception e) {
